@@ -1,6 +1,7 @@
-# EyeSpy-v3
-Aplikacja na Raspberry pi2/3 - robot śledzący linie
-
+# EyeSpy
+Aplikacja na Raspberry pi2/3 - robot śledzący linie  
+  
+  
 # OpenCV-PC-example
 program demonstracyjny algorytmu przetwarzania obrazu na PC
 # PCB
