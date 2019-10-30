@@ -1,0 +1,61 @@
+{
+	"LogLevel": 0,
+	"MainLoop":
+	{
+		"Acquisition":25,
+		"AnalogRead":10,
+		"RTI":10,
+		"PID":10,
+		"Motor":2
+	},
+	"OpenCV_ImageAcquisition":
+	{
+		"Width":640,
+		"Height":480,
+		"ColorCode" : 6,
+		"OpenCV_Preview":true
+	},
+	"OpenCV_AdaptiveThreshold":
+	{
+		"AT_BlockSize":101,
+		"AT_Constant":10,
+		"OpenCV_Preview":true
+	},
+	"OpenCV_BoundariesFinder":
+	{
+		"OpenCV_Preview":true,
+		"DecisionThreshold":110,
+		"Width":32,
+		"Height":24,
+		"vote":10.0
+		
+	},
+	"Communication":
+	{
+    	"Port":12345,
+    	"IP":"192.168.100.213",
+    	"Rpi2_InfoTopic":"RPI2:Info",
+		"Rpi2_VideoTopic":"RPI2:Video",
+		"Rpi2_SyncTopic":"RPI2:Sync",
+		"Rpi2_CommandTopic":"RPI2:Command"
+
+	},
+	"PID":
+	{
+		"p":1,
+		"i":0,
+		"d":0,
+		"f":0
+	},
+	"State":
+	{
+		"State":0
+	},
+	"Analog":
+	{
+		"A0":false,
+		"A1":false,
+		"A2":false,
+		"A3":false
+	}
+}

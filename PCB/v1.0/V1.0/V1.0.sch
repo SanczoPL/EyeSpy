@@ -1,0 +1,271 @@
+EESchema Schematic File Version 4
+EELAYER 29 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L power:GND #PWR0101
+U 1 1 5D826AF4
+P 2350 3800
+F 0 "#PWR0101" H 2350 3550 50  0001 C CNN
+F 1 "GND" H 2355 3627 50  0000 C CNN
+F 2 "" H 2350 3800 50  0001 C CNN
+F 3 "" H 2350 3800 50  0001 C CNN
+	1    2350 3800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2350 3500 2350 3800
+Text Notes 2350 1100 0    50   ~ 0
+Silnik_1\n
+Wire Wire Line
+	2850 3500 2950 3500
+Connection ~ 2850 3500
+Wire Wire Line
+	2750 3500 2850 3500
+Connection ~ 2750 3500
+Wire Wire Line
+	2650 3500 2750 3500
+Wire Wire Line
+	2350 3500 2650 3500
+Connection ~ 2650 3500
+Connection ~ 2350 3500
+$Comp
+L Driver_Motor:TB6612FNG U1
+U 1 1 5D822AE1
+P 2650 2500
+F 0 "U1" H 2650 3681 50  0000 C CNN
+F 1 "TB6612FNG" H 2650 3590 50  0000 C CNN
+F 2 "Package_SO:SSOP-24_5.3x8.2mm_P0.65mm" H 3100 3100 50  0001 C CNN
+F 3 "https://toshiba.semicon-storage.com/us/product/linear/motordriver/detail.TB6612FNG.html" H 3100 3100 50  0001 C CNN
+	1    2650 2500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3250 2100 3400 2100
+Wire Wire Line
+	4500 2100 4500 2500
+Wire Wire Line
+	4500 2900 3400 2900
+Wire Wire Line
+	3250 2200 3400 2200
+Wire Wire Line
+	3400 2200 3400 2100
+Connection ~ 3400 2100
+Wire Wire Line
+	3400 2100 4500 2100
+Wire Wire Line
+	3250 2800 3400 2800
+Wire Wire Line
+	3400 2800 3400 2900
+Connection ~ 3400 2900
+Wire Wire Line
+	3400 2900 3250 2900
+Wire Wire Line
+	3250 2300 3400 2300
+Wire Wire Line
+	3750 2300 3750 2700
+Wire Wire Line
+	3750 2700 3400 2700
+Wire Wire Line
+	3250 2400 3400 2400
+Wire Wire Line
+	3400 2400 3400 2300
+Connection ~ 3400 2300
+Wire Wire Line
+	3400 2300 3750 2300
+Wire Wire Line
+	3250 2600 3400 2600
+Wire Wire Line
+	3400 2600 3400 2700
+Connection ~ 3400 2700
+Wire Wire Line
+	3400 2700 3250 2700
+Text Label 3700 2100 0    50   ~ 0
+M_OUT1
+Text Label 3700 2300 0    50   ~ 0
+M_OUT2
+Wire Wire Line
+	4500 2500 5250 2500
+Connection ~ 4500 2500
+Wire Wire Line
+	4500 2500 4500 2900
+Wire Wire Line
+	2750 1500 2750 1300
+Wire Wire Line
+	2750 1300 2850 1300
+Wire Wire Line
+	2850 1300 2850 1500
+Wire Wire Line
+	2850 1300 2950 1300
+Wire Wire Line
+	2950 1300 2950 1500
+Connection ~ 2850 1300
+Connection ~ 2950 1300
+Text Label 3250 1300 0    50   ~ 0
++7V
+Text Label 1650 1500 0    50   ~ 0
++3,3V
+Wire Wire Line
+	2050 2600 1850 2600
+Wire Wire Line
+	1850 2600 1850 2700
+Wire Wire Line
+	1850 2800 2050 2800
+Wire Wire Line
+	1850 2700 1450 2700
+Connection ~ 1850 2700
+Wire Wire Line
+	1850 2700 1850 2800
+Wire Wire Line
+	2050 2700 1950 2700
+Wire Wire Line
+	1950 2700 1950 2900
+Wire Wire Line
+	1950 2900 2050 2900
+Wire Wire Line
+	1950 2900 1450 2900
+Connection ~ 1950 2900
+Text Label 1500 2700 0    50   ~ 0
+IN1
+Text Label 1500 2900 0    50   ~ 0
+IN2
+$Comp
+L Device:CP1_Small C4
+U 1 1 5D82F867
+P 3800 1400
+F 0 "C4" H 3891 1446 50  0000 L CNN
+F 1 "22u" H 3891 1355 50  0000 L CNN
+F 2 "Capacitor_SMD:CP_Elec_5x3" H 3800 1400 50  0001 C CNN
+F 3 "~" H 3800 1400 50  0001 C CNN
+	1    3800 1400
+	1    0    0    -1  
+$EndComp
+Connection ~ 3800 1300
+Wire Wire Line
+	2950 1300 3800 1300
+$Comp
+L Device:CP1_Small C5
+U 1 1 5D832B68
+P 4500 1400
+F 0 "C5" H 4591 1446 50  0000 L CNN
+F 1 "C22u" H 4591 1355 50  0000 L CNN
+F 2 "Capacitor_SMD:CP_Elec_5x3" H 4500 1400 50  0001 C CNN
+F 3 "~" H 4500 1400 50  0001 C CNN
+	1    4500 1400
+	1    0    0    -1  
+$EndComp
+Connection ~ 4500 1300
+Wire Wire Line
+	4500 1300 4850 1300
+Wire Wire Line
+	3800 1300 4500 1300
+Wire Wire Line
+	2050 2300 1850 2300
+Wire Wire Line
+	1850 2300 1850 2350
+Wire Wire Line
+	1850 2400 2050 2400
+Wire Wire Line
+	1850 2350 1350 2350
+Connection ~ 1850 2350
+Wire Wire Line
+	1850 2350 1850 2400
+Text Label 1450 2350 0    50   ~ 0
+PWM1
+$Comp
+L Device:C C2
+U 1 1 5D837E89
+P 1350 1650
+F 0 "C2" H 1465 1696 50  0000 L CNN
+F 1 "100n" H 1465 1605 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 1388 1500 50  0001 C CNN
+F 3 "~" H 1350 1650 50  0001 C CNN
+	1    1350 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C1
+U 1 1 5D83887F
+P 900 1650
+F 0 "C1" H 1015 1696 50  0000 L CNN
+F 1 "100n" H 1015 1605 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 938 1500 50  0001 C CNN
+F 3 "~" H 900 1650 50  0001 C CNN
+	1    900  1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP1_Small C3
+U 1 1 5D83A0F4
+P 1950 1600
+F 0 "C3" H 2041 1646 50  0000 L CNN
+F 1 "10u" H 2041 1555 50  0000 L CNN
+F 2 "Capacitor_SMD:CP_Elec_5x3" H 1950 1600 50  0001 C CNN
+F 3 "~" H 1950 1600 50  0001 C CNN
+	1    1950 1600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	700  1500 900  1500
+Connection ~ 1350 1500
+Wire Wire Line
+	1350 1500 2350 1500
+Connection ~ 900  1500
+Wire Wire Line
+	900  1500 1350 1500
+$Comp
+L power:GND #PWR?
+U 1 1 5D841898
+P 900 1800
+F 0 "#PWR?" H 900 1550 50  0001 C CNN
+F 1 "GND" H 905 1627 50  0000 C CNN
+F 2 "" H 900 1800 50  0001 C CNN
+F 3 "" H 900 1800 50  0001 C CNN
+	1    900  1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5D8437F7
+P 1350 1800
+F 0 "#PWR?" H 1350 1550 50  0001 C CNN
+F 1 "GND" H 1355 1627 50  0000 C CNN
+F 2 "" H 1350 1800 50  0001 C CNN
+F 3 "" H 1350 1800 50  0001 C CNN
+	1    1350 1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5D8445F3
+P 3800 1500
+F 0 "#PWR?" H 3800 1250 50  0001 C CNN
+F 1 "GND" H 3805 1327 50  0000 C CNN
+F 2 "" H 3800 1500 50  0001 C CNN
+F 3 "" H 3800 1500 50  0001 C CNN
+	1    3800 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5D846376
+P 4500 1500
+F 0 "#PWR?" H 4500 1250 50  0001 C CNN
+F 1 "GND" H 4505 1327 50  0000 C CNN
+F 2 "" H 4500 1500 50  0001 C CNN
+F 3 "" H 4500 1500 50  0001 C CNN
+	1    4500 1500
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC
