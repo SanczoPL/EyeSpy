@@ -1,15 +1,14 @@
 # EyeSpy
-Aplikacja na Raspberry pi2/3 - robot śledzący linie  
+App na Raspberry pi2/3 - linefollowing robot
   
   
 # OpenCV-PC-example
-program demonstracyjny algorytmu przetwarzania obrazu na PC
+PC program show 
 # PCB
-płytka PCB w kicad
+PCB 
 # src
-źródła
+source
 # config.json
-plik konfiguracji
+config file
 # CMakeLists.txt
-plik dla cmake
-
+cmake file
